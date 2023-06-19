@@ -22,7 +22,6 @@ public class RuleDataCodecs {
 
     @SuppressWarnings("all")
     public static <T> Optional<RuleDataCodec<T>> getCodec(Class type) {
-
         RuleDataCodec codec = (RuleDataCodec) codecs.get(type);
         if (null != codec) {
             return Optional.of(codec);

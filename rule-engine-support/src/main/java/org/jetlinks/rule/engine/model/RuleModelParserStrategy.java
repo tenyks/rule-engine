@@ -1,6 +1,5 @@
 package org.jetlinks.rule.engine.model;
 
-import org.jetlinks.rule.engine.api.model.RuleEngineModelParser;
 import org.jetlinks.rule.engine.api.model.RuleModel;
 
 /**

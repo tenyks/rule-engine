@@ -17,7 +17,6 @@ public class LambdaTaskExecutor extends FunctionTaskExecutor {
                               ExecutionContext context,
                               Function<RuleData, Publisher<?>> function) {
         this(name, context, () -> function);
-
     }
 
     public LambdaTaskExecutor(String name,

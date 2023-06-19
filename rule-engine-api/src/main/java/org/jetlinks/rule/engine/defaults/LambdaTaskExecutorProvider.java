@@ -33,7 +33,7 @@ public class LambdaTaskExecutorProvider implements TaskExecutorProvider {
 
     @Override
     public Mono<TaskExecutor> createTask(ExecutionContext context) {
-        return Mono.just(new LambdaTaskExecutor(name, context,function));
+        return Mono.just(new LambdaTaskExecutor(name, context, function));
     }
 
 }
