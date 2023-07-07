@@ -55,8 +55,7 @@ public class DefaultSchedulerLoadBalancer implements SchedulerLoadBalancer {
     }
 
     public void setup() {
-        setupAsync()
-                .block(Duration.ofSeconds(30));
+        setupAsync().block(Duration.ofSeconds(30));
     }
 
     public Mono<Void> setupAsync() {
@@ -104,7 +103,7 @@ public class DefaultSchedulerLoadBalancer implements SchedulerLoadBalancer {
             return Mono.empty();
         }
 
-        //TODO 实现re balance
+        //TODO 实现rebalance
         return Mono.error(new UnsupportedOperationException());
     }
 

@@ -55,7 +55,6 @@ public class LocalWorker implements Worker {
 
     @Override
     public Mono<List<String>> getSupportExecutors() {
-
         return Mono.just(new ArrayList<>(executors.keySet()));
     }
 
